@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home | Red Pandamanium</title>
+		<!-- 
+			Red Pandamanium  main web page
+			Filename: index.html
+
+			Author: Marcela Estrada 
+			Date:   3/20/2018
+			Intro to Web Design Final Project
+		-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<script src="modernizr.custom.40753.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="shortcut icon" href="images/ReddPandaIcon.ico">
+	</head>
+	<body>
+	
+		<a href="#top"><div class="Panda" ><p>Go up?<p>
+<img src="images/redPanda.png" width="730" height="501" alt="go up button">
+		</div></a>
+		
+	<div class="containerBackHeader">
+			
+			<div class="containerHeader">
+		
+		<header>
+<div id="top">
+		</div>		
+		<img src="images/redPanda.png" width="730" height="501" class="topPanda" alt="logo">
+			<h1 class="red">red<span class="title">pandamanium</span></h1>
+<p class="h22">Saving cute red pandas one at a time!</p>
+		
+		</header>
+		<br>
+		</div>
+		
+		
+		</div>
+		
+		<nav class="homenavigation">
+			<p><a href="index.html">HOME</a></p>
+			<p><a href="facts.html">FACTS</a></p>
+			<p><a href="howtohelp.html">HOW TO HELP</a></p>
+			<p><a href="about.html">ABOUT US</a></p>
+			<p><a href="contact.html">CONTACT</a></p>
+		</nav>
+		<!--<img src="images/redPandaDraw.jpg" height="200px"><-->
+		
+		<div class="parallaxheader"></div>		
+		<div class="containerArticle">
+		<article>
+				<h2 class="artTitle">Welcome!</h2>
+				
+				<p>Take a look at our site and learn about the precious red panda!</p>
+				<p>Please enjoy!</p>
+				<p class="signature">-Sincerely The Pandmanium Team &#60;3</p>
+				
+					
+				<!-- slide show -->
+		
+
+		<br>
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/pandaEat.jpg" style="width:100%" alt="red panda eating">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/pandaCute.jpg" style="width:100%" alt="red panda being cute">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/pandaHungry.jpg"  style="width:100%" alt="red panda eating">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+</script>
+
+		
+			</article>
+			<div class="parallax"></div>	
+			</div>
+		
+		<div class="containerFooter">
+		<footer>
+		<img src="images/ReddPandaIcon.ico" alt="go up button">
+		
+		<p><sup>&#169;</sup> RedPandamanium </p>
+		<form class>
+			<fieldset>
+				<label for="ema">
+				Suscribe to our newsletter!
+				<input type="email" id="ema" placeholder="address@email.com"> 
+				</label>
+				<label>
+				<input type="submit" value="Submit">
+				</label>
+			</fieldset>
+		</form>
+		</footer>
+	
+	</div>
+			
+	</body>
+</html>

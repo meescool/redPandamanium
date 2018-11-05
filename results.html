@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Submission | Red Pandamanium</title>
+		<!-- 
+			Red Pandamanium  submission results web page
+			Filename: results.html
+
+			Author: Marcela Estrada 
+			Date:   3/20/2018
+			Intro to Web Design Final Project
+		-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<script src="modernizr.custom.40753.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="shortcut icon" href="images/ReddPandaIcon.ico">
+	</head>
+	<body>
+	<nav class="sitenavigation">
+			<p><a href="index.html">HOME</a></p>
+			<p><a href="facts.html">FACTS</a></p>
+			<p><a href="howtohelp.html">HOW TO HELP</a></p>
+			<p><a href="about.html">ABOUT US</a></p>
+			<p><a href="contact.html">CONTACT</a></p>
+		</nav>
+	
+	<a href="#top"><div class="Panda"><p>Go up?<p>
+<img src="images/redPanda.png" width="730" height="501" alt="go up button">
+		</div></a>
+	<div class="containerBackHeader">
+			
+			<div class="containerHeader">
+		<!--
+		<header>
+			<img src="images/redPanda.png" width="730" height="501" class="topPanda">
+			<h1 class="red">red<span class="title">pandamanium<h2>Saving cute red pandas one at a time!</h2></span>
+			
+		</header>
+		-->
+		<br>
+		
+		</div>
+		</div>
+		<!--<img src="images/redPandaDraw.jpg" height="200px"><-->
+		<div id="top">
+		</div><div class="parallaxheader"></div>		
+		<div class="containerArticle">
+		<article>
+			
+				<h1 class="artTitle">Submitted!!</h1>
+				
+				<p>We will get back to you as soon as possible!!</p>
+				<p class="signature">-Sincerely The Pandmanium Team &#60;3</p>
+				
+				
+			</article>
+			</div>
+				<br>
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/pandaEat.jpg" style="width:100%" alt="red panda eating">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/pandaSnow.jpg" style="width:100%" alt="red panda in tree">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/pandaTree.jpg"  style="width:100%" alt="red panda in tree">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+</script>
+
+		
+		<div class="containerFooter">
+		<footer>
+		<img src="images/ReddPandaIcon.ico" alt="go up button">
+		
+		<p><sup>&#169;</sup> RedPandamanium </p>
+		<fieldset>
+			<label for="ema">
+			Suscribe to our newsletter!
+			<input type="email" id="ema" placeholder="address@email.com"> 
+			</label>
+			<label>
+			<input type="submit" value="Submit">
+			</label>
+		</fieldset>
+		</footer>
+		</div>
+	</body>
+</html>
+               
