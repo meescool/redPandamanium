@@ -1,0 +1,623 @@
+/* 
+	Red Pandamanium website
+	Filename: styles.css
+
+	Author: Marcela Estrada
+	Date: 3/20/2018
+	Final Project for CSC 165 Intro to Web Design
+*/
+
+
+html {
+	font-size: 16px;
+	font-family: Mina, sans-serif;
+}
+
+/* selection styles */
+::-moz-selection {
+    color: white;
+    background: lightsteelblue;
+}
+::selection {
+    color: white;
+    background: lightsteelblue;
+}
+/*	reset styles */
+a, article, body, div, figure, figcaption, footer, header, h1, h2, h3, img, nav, p, ul, li, dd, fieldset, form, label, legend, table, tr, th, td {
+	border: 0;
+	padding: 0; 
+	margin: 0;
+}
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	display: block;
+	
+}
+body {
+	background-color: white;
+
+	
+}
+
+.containerBackHeader {
+	background-color: white;
+
+}
+.containerHeader {
+	max-width: 1000px;
+	margin: 0 auto;
+	
+	}
+
+/* header section */
+header h1 {
+	background-color: white;
+	text-align: center;
+	border-radius: 50px;
+	}
+	
+
+.topPanda {
+	max-width: 30%;
+	margin: auto;
+	margin-bottom: -5em;
+	padding: 0.5em  ;
+	padding-top: 1em;
+	transition: text-shadow 1s;
+}
+
+
+.title {
+	text-align: center;
+	font-size: 0.6em;
+	font-weight: normal;
+	color: white;
+	text-shadow:  3px 5px  #d3d3d3;
+	font-family:'Do Hyeon', sans-serif;
+	transition: font-size 1s;
+	
+}
+.red {
+	text-align: center;
+	font-size: 10em;
+	color:#FF4245;
+	font-weight: bold;
+	font-family:'Black Han Sans', sans-serif;
+	padding-bottom: 0.2em;
+	
+}
+/*
+.title:hover {
+	font-size: 0.7em;
+}
+.title:hover {
+	font-size: 0.7em;
+}
+.topPanda:hover {
+	box-shadow: 3px 5px  #d3d3d3;
+}
+*/
+.h22 {
+	font-family: 'Satisfy', cursive;
+	font-style: italic;
+	margin-top: -1.8em;
+	margin-right: 1.3em;
+	font-weight: lighter;
+	font-size: 1.3em;
+	text-align: right;
+	color:#d3d3d3;
+	text-shadow: none;
+	
+}
+
+
+/* site navigation bar */
+
+nav.sitenavigation {
+	position: fixed;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	z-index: 1;
+	background-color: #FF4245;
+	
+}
+nav.sitenavigation p {
+	font-family: Mina, sans-serif;
+	margin: 1em 1em; 
+	padding: 0.3em 0.2em 0.2em 0.1em;
+	display: inline-block;
+	
+}
+nav.sitenavigation a:link {
+	text-decoration: none;
+	padding: 0.3em 1em;
+	color: lightsteelblue;
+	background-color: white;
+	border-radius: 50px;
+	transition: padding 0.6s, background-color 0.3s;
+	
+}
+nav.sitenavigation a:visited {
+	color:  #FF4245;
+}
+
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+	color: white;
+	background-color: #FF4245;
+	border: 0;
+	padding: 0.5em 1.5em;
+}
+
+/* homenavigation */
+
+nav.homenavigation {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #FF4245;
+	z-index: 1;
+	
+}
+nav.homenavigation p {
+	font-family: Mina, sans-serif;
+	margin: 1em 1em; 
+	padding: 0.3em 0.2em 0.2em 0.1em;
+	display: inline-block;
+	
+}
+nav.homenavigation a:link {
+	text-decoration: none;
+	padding: 0.3em 1em;
+	color: lightsteelblue;
+	background-color: white;
+	border-radius: 50px;
+	transition: padding 0.6s, background-color 0.3s;
+	
+}
+nav.homenavigation a:visited {
+	color:  #FF4245;
+}
+
+nav.homenavigation a:hover, nav.sitenavigation a:focus {
+	color: white;
+	background-color: #FF4245;
+	border: 0;
+	padding: 0.5em 1.5em;
+}
+
+/*  article */
+.containerArticle {
+	background-color: white;
+	
+}
+
+article {
+	color: grey;
+	font-family: Mina, sans-serif;
+	font-size: 1.5em;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1em;
+	padding-bottom: 2em;
+	text-align: center;
+	
+}
+.artTitle {
+	color: #FF4245;
+	
+	font-family:  'Mina', cursive;
+	font-size: 5em;
+	
+	padding-bottom: 0.3em;
+	transition: /*text-shadow 1s,*/ color 1s;
+	 
+}
+.map {
+	max-width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+	
+}
+a.emailR {
+	color: lightsteelblue;
+	transition: color 0.3s;
+}
+a.emailR:hover {
+	color: #FF4245;
+}
+a {
+	color: lightsteelblue;
+	transition: color 0.3s;
+}
+a:hover{
+	color: #FF4245;
+}
+/*
+#WE {
+	color: #FF4245;
+	font-family:  'Mina', cursive;
+	font-size: 5em;
+	padding-bottom: 0.2em;
+	transition: font-size 1s;
+	transition: text-shadow 1s;
+}
+*/
+.artTitle:hover {
+	/*text-shadow:  3px 5px #dcd6d9;*/
+	color: #d3d3d3;
+}
+/*article h1:hover {
+	font-size: 5.5em;
+}*/
+.signature {
+	font-size: 1em;
+	font-family: 'Satisfy', cursive;
+	color: #d3d3d3;
+	padding-top: 1em;
+	text-align: right;
+}
+
+/* contact form styles */
+form.contactform {
+	margin: 0 auto;
+	max-width: 70%;
+	max-height: 100%;
+	display: inline-block;
+	background-color: aliceblue;
+	
+	
+}
+.contactform fieldset{
+	background-color: aliceblue;
+	text-align:center;
+	margin: 0 auto;
+	position: relative;
+	float: left;
+	text-align: center;
+	
+	width: 100%;
+	padding-top: 1em;
+	border-bottom: 2px solid white;
+	padding-bottom: 0.4em;
+	
+}
+
+.contactform input[type=email], .contactform  input[type=text], .contactform textarea {
+    background-color: white;
+    color: gainsboro;
+	font-size: 1em;
+	padding: 0.5em;
+	border: none;
+	color: gainsboro;
+	font-size: 1em;
+	resize: none;
+	
+	margin-top: 0.2em;
+	width: 90%;
+	text-align: left;
+	
+}
+.contactform textarea {
+	height: 200px;
+}
+
+.contactform  input[type=submit] {
+	background-color: #FF4245;
+    border: none;
+    color: white;
+    padding: 0.5em;
+	
+    text-decoration: none;
+	margin: 1em auto;
+	
+    cursor: pointer;
+	font-size: 1em;
+	transition: background-color 0.4s, color 0.4s;
+	}
+
+.contactform input:hover,  .contactform textarea:hover {
+	background-color: white;
+	color: lightsteelblue;
+}
+.contactform label {
+	padding: 1em;
+	display: inline-block;
+	
+}
+.contactInfo label{
+	padding: 0.2em;
+	padding-bottom: 1em;
+}
+.addInfo {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	text-align: center;
+	
+}
+.addInfo legend {
+	padding: 1em;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.yourMessage label {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.check {
+	padding-bottom: 1em;
+}
+
+
+
+
+/* list styles */
+.listcolor {
+	transition: color 1s;
+}
+ul {
+	text-align: left;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+li {
+	font-size: 1em;
+	font-weight: bold;
+}
+dd {
+	padding-bottom: 1em;
+}
+.listcolor:hover {
+	color: #FF4245;
+}
+
+/* footer */
+
+footer {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1em;
+	font-size: 1.5em;
+	color: white;
+}
+footer p {
+	position: relative;
+	float: left;
+	text-align: center;
+	margin-right: 1em;
+	margin-top: 0.3em;
+	margin-left: 1em;
+}
+footer img {
+	position: relative;
+	float: left;
+	border: 3px solid white;
+}
+.containerFooter {
+	background-color: #FF4245;
+	height: 100px;
+}
+/* footer form */
+ fieldset {
+	border: none;
+	font-size: 0.8em;
+	margin: 0 auto;
+	position: relative;
+	float: right;
+}
+#ema {
+    background-color: white;
+    color: black;
+	font-size: 1em;
+	padding: 0.5em;
+	border: none;
+	margin-left: 1em;
+	
+}
+
+ input[type=button], input[type=submit], input[type=reset] {
+    background-color: lightsteelblue;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    text-decoration: none;
+	margin-bottom: 1em;
+    cursor: pointer;
+	font-size: 1em;
+	transition: background-color 0.4s, color 0.4s;
+}
+ input:hover, #ema:hover{
+	background-color: white;
+	color: lightsteelblue;
+}
+
+/* fixed button to scroll back up */
+.Panda {
+	text-align: center;
+	position: fixed;
+	max-width: 8%;
+	right: 1em;
+	bottom: 1em;
+	color: #ffeda0;
+	transition: max-width 1s, color 0.5s, padding 1s, border-radius;
+	padding: 0.1em;
+	padding-bottom: 0.1em;
+	
+	border-radius: 60px;
+	background-color: #ffeda0;
+	z-index: 1;
+}
+.Panda:hover {
+	max-width: 10%;
+	color: white;
+	padding: 1em 0.5em;
+	border-radius: 80px;
+}
+/* parallax styles */
+.parallax {
+	
+	 background-image: url('images/pandaSnow.jpg' );
+	height: 500px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.5;
+	
+	
+}
+.parallaxwelcome{
+	
+	 background-image: url('images/pandaTree.jpg' );
+	height: 200px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.5;
+	
+	
+}
+.parallaxhow{
+	
+	 background-image: url('images/pandaHungry.jpg' );
+	height: 500px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.5;
+	
+	
+}
+/*
+.parallax:hover {
+	height: 500px;
+}*/
+.parallaxheader:hover {
+	height: 400px;
+}
+.parallaxheader {
+	
+	 background-image: url('images/pandaTree.jpg' );
+	height: 300px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.5;
+	transition: height 1s;
+	
+}
+.parallaxfacts {
+	
+	 background-image: url('images/pandaEat.jpg' );
+	height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.5;
+	transition: height 1s;
+	
+}
+.parallaxabout {
+	
+	 background-image: url('images/pandaCute.jpg' );
+	height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.5;
+	transition: height 1s;
+	
+}
+	
+/* slideshow styles*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*  media queries for smaller screens*/
+@media only screen and (max-width: 900px) {
+  .red {font-size: 5em}
+  .topPanda {max-width: 10%; padding-bottom: 3em;}
+  .containerFooter {
+	background-color: #FF4245;
+	height: 170px;
+}
+}
+@media only screen and (max-width: 800px) {
+  .red {font-size: 5em}
+  .topPanda {max-width: 10%; padding-bottom: 3em;}
+}
+@media only screen and (max-width: 622px) {
+  .red {font-size: 5em}
+  .topPanda {max-width: 10%; padding-bottom: 3em;}
+  .containerFooter {
+	background-color: #FF4245;
+	height: 260px;
+}
+}
+@media only screen and (max-width: 500px) {
+  .text {
+	  font-size: 11px;
+	  }
+  .red {
+	  font-size: 3em; padding-top: 1em;
+	  }
+  .topPanda {
+	  max-width: 15%; padding-bottom: 2em;
+	  }
+  footer {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1em;
+	font-size: 1em;
+	color: white;
+}
+  nav.sitenavigation {
+	  font-size: 0.6em;
+	  }
+  .containerFooter {
+	background-color: #FF4245;
+	height: 180px;
+  }
+}
+
+
+
